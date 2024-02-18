@@ -2,18 +2,23 @@ package main
 
 import "testing"
 
-func TestFatorialSucesso(t *testing.T) {
-	input := 2
-
-	if Fat(input) == 0 {
-		t.Error(Fat(input) == 0)
+func TestFat(t *testing.T) {
+	tests := []struct {
+		input    int
+		expected int
+	}{
+		{0, 1},
+		{1, 1},
+		{2, 2},
+		{3, 6},
+		{4, 24},
+		{5, 120},
 	}
-}
 
-func TestFatorialZeroSucesso(t *testing.T) {
-	input := 0
-
-	if Fat(input) < 0 {
-		t.Error(Fat(input) < 0)
+	for _, test := range tests {
+		result := Fat(test.input)
+		if result != test.expected {
+			t.Errorf("Fat(%d) Retornado %d, Esperado %d", test.input, result, test.expected)
+		}
 	}
 }
