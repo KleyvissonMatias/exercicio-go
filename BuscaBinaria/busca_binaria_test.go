@@ -18,7 +18,7 @@ func TestValidaBin(t *testing.T) {
 	for _, tc := range testCases {
 		got := ValidaBin(tc.list, tc.item)
 		if got != tc.want {
-			t.Errorf("Lista %v e item %d, Esperado %d, Obtido %d", tc.list, tc.item, tc.want, got)
+			t.Errorf("Lista: %v e item: %d, Esperado: %d, Obtido: %d", tc.list, tc.item, tc.want, got)
 		}
 	}
 }
