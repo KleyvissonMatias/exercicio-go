@@ -8,7 +8,6 @@ func main() {
 }
 
 func listTotalSum(array []int) []int {
-
 	var result int
 
 	for _, v := range array {

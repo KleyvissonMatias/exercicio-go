@@ -19,6 +19,7 @@ func main() {
 	_, _ = fmt.Scanln(&value)
 	fmt.Printf("%d é Fibonnaci? %s ", value, strconv.FormatBool(ValidaNumeroSequencia(sequencia, value)))
 }
+
 func Fib(n int) int {
 	if n <= 1 {
 		return n
