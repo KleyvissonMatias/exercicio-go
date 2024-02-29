@@ -8,7 +8,7 @@ import (
 func TestMatrizDoisPorDois(t *testing.T) {
 	rand.Intn(42)
 
-	matriz := MatrizDoisPorDois()
+	matriz := matrizDoisPorDois()
 
 	for i := 0; i < len(matriz); i++ {
 		for j := 0; j < len(matriz[i]); j++ {
@@ -22,7 +22,7 @@ func TestMatrizDoisPorDois(t *testing.T) {
 func TestMatrizTresPorTres(t *testing.T) {
 	rand.Intn(42)
 
-	matriz := MatrizTresPorTres()
+	matriz := matrizTresPorTres()
 
 	for i := 0; i < len(matriz); i++ {
 		for j := 0; j < len(matriz[i]); j++ {

@@ -16,7 +16,7 @@ func TestFat(t *testing.T) {
 	}
 
 	for _, test := range tests {
-		result := Fat(test.input)
+		result := fat(test.input)
 		if result != test.expected {
 			t.Errorf("Fat(%d) Retornado %d, Esperado %d", test.input, result, test.expected)
 		}

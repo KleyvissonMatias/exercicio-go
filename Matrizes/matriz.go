@@ -6,12 +6,12 @@ import (
 )
 
 func main() {
-	fmt.Print("Matriz 2x2: ", MatrizDoisPorDois())
+	fmt.Print("Matriz 2x2: ", matrizDoisPorDois())
 	fmt.Println()
-	fmt.Print("Matriz 3x3: ", MatrizTresPorTres())
+	fmt.Print("Matriz 3x3: ", matrizTresPorTres())
 }
 
-func MatrizDoisPorDois() [2][2]int {
+func matrizDoisPorDois() [2][2]int {
 	var matriz [2][2]int
 	for i := 0; i < len(matriz); i++ {
 		for j := 0; j < len(matriz); j++ {
@@ -21,7 +21,7 @@ func MatrizDoisPorDois() [2][2]int {
 	return matriz
 }
 
-func MatrizTresPorTres() [3][3]int {
+func matrizTresPorTres() [3][3]int {
 	var matriz [3][3]int
 	for i := 0; i < len(matriz); i++ {
 		for j := 0; j < len(matriz); j++ {

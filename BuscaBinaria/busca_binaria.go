@@ -3,12 +3,12 @@ package main
 import "fmt"
 
 func main() {
-	fmt.Println(ValidaBin([]int{1, 2, 3, 4, 5, 20}, 20))
-	fmt.Println(ValidaBin([]int{1, 2, 3, 4, 5, 7000}, 7000))
-	fmt.Println(ValidaBin([]int{1, 2, 3, 4, 5, 7000}, 380000))
+	fmt.Println(validaBin([]int{1, 2, 3, 4, 5, 20}, 20))
+	fmt.Println(validaBin([]int{1, 2, 3, 4, 5, 7000}, 7000))
+	fmt.Println(validaBin([]int{1, 2, 3, 4, 5, 7000}, 380000))
 }
 
-func ValidaBin(list []int, item int) int {
+func validaBin(list []int, item int) int {
 	low := 0
 	high := len(list) - 1
 	for low <= high {

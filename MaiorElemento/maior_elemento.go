@@ -7,10 +7,10 @@ import (
 
 func main() {
 	listaElementos := []int{2, 7, 5, 12, 30, 20}
-	fmt.Println(MaiorSegundoMaiorElemento(listaElementos))
+	fmt.Println(maiorSegundoMaiorElemento(listaElementos))
 }
 
-func MaiorSegundoMaiorElemento(listaElementos []int) (int, int) {
+func maiorSegundoMaiorElemento(listaElementos []int) (int, int) {
 	maiorElemento := 0
 	segundoMaiorElemento := math.MinInt
 

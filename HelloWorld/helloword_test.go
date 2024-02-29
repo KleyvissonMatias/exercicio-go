@@ -8,7 +8,7 @@ import (
 func TestHelloSucesso(t *testing.T) {
 	entrada := "Hello, World!"
 	esperado := "Hello, World!"
-	resultado := Hello()
+	resultado := hello()
 	if !strings.EqualFold(resultado, entrada) {
 		t.Errorf("Entrada: %s , Esperado: %s, Resultado: %s", entrada, esperado, resultado)
 	}
@@ -17,7 +17,7 @@ func TestHelloSucesso(t *testing.T) {
 func TestHelloFalha(t *testing.T) {
 	entrada := "Hello, World!"
 	esperado := "Hello!"
-	resultado := Hello()
+	resultado := hello()
 	if !strings.EqualFold(resultado, entrada) {
 		t.Errorf("Entrada: %s , Esperado: %s, Resultado: %s", entrada, esperado, resultado)
 	}

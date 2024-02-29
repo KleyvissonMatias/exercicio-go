@@ -28,7 +28,7 @@ func TestValidaNumeroSequencia(t *testing.T) {
 	}
 
 	for _, test := range tests {
-		result := ValidaNumeroSequencia(sequencia, test.input)
+		result := validaNumeroSequencia(sequencia, test.input)
 		if result != test.expected {
 			t.Errorf("Entrada: %d, Esperado: %t, Obtido: %t", test.input, test.expected, result)
 		}
@@ -50,7 +50,7 @@ func TestFibonacci(t *testing.T) {
 	}
 
 	for _, test := range tests {
-		result := Fib(test.n)
+		result := fib(test.n)
 		if result != test.expected {
 			t.Errorf("Fib(%d) - Esperado: %d, Obtido: %d", test.n, test.expected, result)
 		}
