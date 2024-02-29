@@ -17,7 +17,7 @@ func TestMaiorSegundoMaiorElemento(t *testing.T) {
 	}
 
 	for _, test := range tests {
-		maior, segundoMaior := maiorSegundoMaiorElemento(test.input)
+		maior, segundoMaior := retornaMaiorESegundoMaiorElemento(test.input)
 		expected := test.result
 		if !reflect.DeepEqual([2]int{maior, segundoMaior}, expected) {
 			t.Errorf("Para a entrada %v, esperava-se %v, mas obteve %v", test.input, expected, [2]int{maior, segundoMaior})

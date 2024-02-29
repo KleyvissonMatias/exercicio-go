@@ -15,7 +15,7 @@ func TestSum(t *testing.T) {
 	}
 
 	for _, tc := range testCases {
-		got := sum(tc.input)
+		got := retornaSoma(tc.input)
 		if got != tc.want {
 			t.Errorf("Entrada: %v, Esperado: %d, Obtido: %d", tc.input, tc.want, got)
 		}

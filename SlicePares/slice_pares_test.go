@@ -17,7 +17,7 @@ func TestReturnSlicePares(t *testing.T) {
 	}
 
 	for _, tc := range testCases {
-		got := returnSlicePares(tc.input)
+		got := retornaSlicePares(tc.input)
 		if !reflect.DeepEqual(got, tc.want) {
 			t.Errorf("Entrada: %v, Esperado: %v, Obtido: %v", tc.input, tc.want, got)
 		}
